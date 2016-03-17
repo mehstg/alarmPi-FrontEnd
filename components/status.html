@@ -1,0 +1,22 @@
+<span ng-if="errorMessage">{{errorMessage}}</span>
+<div ng-if="alarmSystem">
+<h1>{{alarmSystem.Title}}</h1>
+<div ng-if="alarmSystem.IsArmed" class="alert alert-danger" role="alert">Armed</div>
+<div ng-if="!alarmSystem.IsArmed" class="alert alert-success" role="alert">Disarmed</div>
+
+<table class="table table-striped">
+  <tr>
+    <th>Date</th>
+    <th>Time</th>
+    <th>State Change</th>
+  </tr>
+
+<tr ng-repeat="logline in alarmSystem.Log">
+<td>{{logline.Date}}</td>
+<td>{{logline.Time}}</td>
+<td>{{logline.StateChange}}</td>
+
+</tr>
+</table>
+
+</div>

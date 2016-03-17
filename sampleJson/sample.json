@@ -1,0 +1,21 @@
+{
+    "Title": "Wansbeck Alarm System",
+    "IsArmed": false,
+    "Log": [
+        {
+            "Date": "20/01/2015",
+            "Time": "01:50",
+            "StateChange": "Disarmed"
+        },
+        {
+            "Date": "20/01/2015",
+            "Time": "07:50",
+            "StateChange": "Armed"
+        },
+        {
+            "Date": "19/01/2015",
+            "Time": "07:50",
+            "StateChange": "Armed"
+        }
+    ]
+}
