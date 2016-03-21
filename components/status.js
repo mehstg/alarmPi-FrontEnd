@@ -6,7 +6,7 @@
     var deferred = $q.defer();
     $http({
       method: 'GET',
-      url: 'http://alarmpi-backend:5000/api/v1.0/getState'
+      url: 'http://localhost/api/v1.0/getState'
     }).
     success(function(data,status,headers,config){
       deferred.resolve(data);
